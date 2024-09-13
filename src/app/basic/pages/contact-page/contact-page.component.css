@@ -1,13 +1,6 @@
-/* estilos generales */
 .container {
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-@media (max-width: 800px) {
-  .container {
-    max-width: 100%;
-    padding: 0 10px;
-  }
+  margin: auto;
+  padding: 10px;
 }

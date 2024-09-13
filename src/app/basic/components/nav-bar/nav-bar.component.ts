@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { ThemeService } from '../../../services/theme.service';
 
 @Component({
   selector: 'basic-nav-bar',
@@ -11,9 +12,11 @@ export class NavBarComponent {
   navLinks = [
     { path: '/basic/home', label: 'Home' },
     { path: '/basic/services', label: 'Services' },
-    { path: '/basic/about', label: 'About' },
-    { path: '/basic/contact', label: 'Contact' }
+    { path: '/basic/about', label: 'About us' },
+    { path: '/basic/contact', label: 'Contact us' }
   ];
+
+  constructor(private themeService: ThemeService) {}
 
   // Alterna el estado del sidebar
   toggleSidebar(): void {
@@ -25,6 +28,10 @@ export class NavBarComponent {
     this.isSidebarOpen = false;
   }
 
+  // Alterna el tema
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+  }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {

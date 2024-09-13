@@ -1,30 +1,6 @@
-/* estilos contenedor */
 .container {
-  position: relative;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
-  overflow: hidden;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* estilos titulo */
-.titulo {
-  text-align: center;
-  color: white;
-}
-
-.titulo h1 {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 300;
-}
-
-@media (max-width: 800px) {
-  .container {
-    padding: 0;
-  }
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
 }

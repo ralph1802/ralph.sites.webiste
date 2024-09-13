@@ -5,21 +5,17 @@
         <li *ngFor="let link of navLinks">
           <a [routerLink]="link.path">{{ link.label }}</a>
         </li>
+        <li>
+          <theme-toggle></theme-toggle>
+        </li>
+        <div class="sidebar">
+          <side-bar></side-bar>
+        </div>
       </ul>
       <a href="#"><img src="/assets/images/ralph.sites.png" alt="Logo" class="logo"></a>
-      <button class="menu-btn" [ngClass]="{'open': isSidebarOpen}" (click)="toggleSidebar()">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
-      </button>
     </nav>
   </div>
-  <div class="overlay" *ngIf="isSidebarOpen" (click)="closeSidebar()"></div>
-  <aside class="sidebar" [ngClass]="{'open': isSidebarOpen}">
-    <ul class="navbar-links">
-      <li *ngFor="let link of navLinks">
-        <a [routerLink]="link.path">{{ link.label }}</a>
-      </li>
-    </ul>
-  </aside>
-</div>
+

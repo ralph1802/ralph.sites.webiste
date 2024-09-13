@@ -1,0 +1,14 @@
+.sidebar {
+  text-align: center;
+}
+
+.sidebar button {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-elements);
+  background: var(--main-background);
+  border: none;
+  padding: 3px 12px;
+  border-radius: 10px;
+}

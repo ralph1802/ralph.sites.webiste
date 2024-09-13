@@ -1,7 +1,6 @@
 /* estilos generales */
 .navbar-container {
   width: 100%;
-  font-weight: 400;
 }
 
 .navbar {
@@ -9,18 +8,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  background-color: #000;
+  background-color: var(--blocks-cards);
   color: white;
   font-size: 12px;
   height: 50px;
   width: 100%;
   position: relative;
   box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .navbar-links {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -28,143 +30,39 @@
 }
 
 .navbar-links a {
-  color: #ffff;
+  font-size: 14px;
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  color: var(--text-elements);
   text-decoration: none;
   padding: 10px 20px;
 }
 
 .navbar-links a:hover {
-  color: #ccc ;
+  color: #0A66C2;
 }
 
 .logo {
   max-width: 200px;
-  width: 80px;
+  width: 100px;
   margin: 0;
   align-items: flex-start;
   order: 0;
-}
-
-.menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  color: #ffff;
-  cursor: pointer;
-  order: 2;
 }
 
 .sidebar {
   display: none;
 }
 
-/* estilos pantallas >800px */
+/* estilos pantallas <=800px */
 @media (max-width: 800px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
+  .sidebar {
+    display: block;
   }
 
-  .navbar-links {
+
+  .navbar-links li {
     display: none;
   }
 
-  .sidebar {
-    position: fixed;
-    top: 50px;
-    right: 0;
-    height: 100%;
-    width: 150px;
-    background-color: #000;
-    color: white;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-    padding: 20px;
-    box-sizing: border-box;
-    display: block;
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
-  }
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-  }
-
-  .sidebar .navbar-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 12px;
-  }
-
-  .sidebar .navbar-links a {
-    display: block;
-    padding: 12px 0;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .sidebar .navbar-links li {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  /* estilos generales de botón */
-  .menu-btn {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .menu-btn .line {
-    position: absolute;
-    height: 2px;
-    width: 50%;
-    background-color: #ffff;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    left: 25%;
-  }
-
-  .menu-btn .line-1 {
-    top: 0;
-  }
-
-  .menu-btn .line-2 {
-    top: 5px;
-  }
-
-  .menu-btn .line-3 {
-    top: 10px;
-  }
-
-  /* animacion botón */
-  .menu-btn.open .line-1 {
-    transform: rotate(45deg);
-    top: 5px;
-    width: 50%;
-  }
-
-  .menu-btn.open .line-2 {
-    opacity: 0;
-  }
-
-  .menu-btn.open .line-3 {
-    transform: rotate(-45deg);
-    top: 5px;
-    width: 50%;
-  }
 }

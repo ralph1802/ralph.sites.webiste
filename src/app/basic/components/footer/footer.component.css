@@ -1,65 +1,60 @@
+/* -------------------- General Styles -------------------- */
 .footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #000;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--blocks-cards);
   padding: 20px;
+  border-radius: 10px 10px 0 0;
 }
-
 
 .logo {
   display: none;
 }
 
 .footer-section {
-  color: #fff;
-  padding: 10px;
+  color: var(--text-elements);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-background);
+  border-radius: 10px;
+
 }
 
 .footer-section h3 {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-family: 'SF Pro';
+  font-size: 18px;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  padding: 5px;
-}
-
-.footer-section ul li a {
-  color: #fff;
+.footer-section a {
+  color: var(--text-elements);
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
+  padding: 10px 0;
 }
 
-.footer-section ul li a:hover {
-  text-decoration: underline;
-}
-
-
-.footer-section p a:hover {
+.footer-section a:hover {
   text-decoration: underline;
 }
 
 .dev {
   padding: 20px;
-  background-color: #000;
-  border-top: 1px solid #fff;
+  background-color: var(--blocks-cards);
+  border-top: 1px solid var(--main-background);
+  border-radius: 0 0 10px 10px;
+  text-align: center;
 }
 
 .dev p {
   font-size: 14px;
-  color: #fff;
+  color: var(--text-elements);
   margin: 0;
 }
 
-/* Estilos para el enlace dentro del contenedor */
 .dev a {
-  color: #fff;
+  color: var(--text-elements);
   text-decoration: none;
 }
 
@@ -67,39 +62,22 @@
   text-decoration: underline;
 }
 
-
-@media (max-width: 600px) {
+/* -------------------- Responsive Styles -------------------- */
+@media (max-width: 800px) {
   .footer {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     text-align: center;
-    flex-direction: column;
-  }
-
-  .footer-section {
-    margin-bottom: 10px;
-  }
-
-  .footer-section a {
-    min-height: 48px;
-    min-width: 48px;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .footer-section li {
-    margin-bottom: 20px;
   }
 
   .logo {
     display: block;
-    margin-bottom: 20px;
   }
 
   .logo img {
     width: 100px;
   }
 
-  .dev {
-    text-align: center;
+  .footer-section a {
+    margin: 10px 0;
   }
-
 }

@@ -1,0 +1,7 @@
+<div class="theme-toggle-container" (click)="toggleTheme()">
+  <div class="toggle-switch">
+    <img src="/assets/images/sun.png" alt="Sol" class="icon-sun" />
+    <img src="assets/images/moon.png" alt="Luna" class="icon-moon" />
+    <div class="toggle-circle" [ngClass]="{'dark-mode': theme === 'dark'}"></div>
+  </div>
+</div>

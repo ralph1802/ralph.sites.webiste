@@ -1,0 +1,40 @@
+.theme-toggle-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-switch {
+  padding: 2px;
+  justify-content: space-between;
+  display: flex;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggle-circle {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s;
+}
+
+.dark-mode {
+  transform: translateX(20px);
+}
+
+.toggle-switch {
+  background-color: #666;
+}
+
+.toggle-circle.dark-mode {
+  background-color: #000;
+}
