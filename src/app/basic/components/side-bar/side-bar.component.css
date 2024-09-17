@@ -5,25 +5,21 @@
 
 .sidebar-button button {
   cursor: pointer;
-  background: var(--card-element);
+  background: var(--blocks-cards);
   border: none;
   padding: 10px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
   height: 40px;
   width: 50px;
 }
 
-.sidebar-button button .bar {
+/* .sidebar-button button .bar {
   display: block;
   width: 80%;
   height: 3px;
-  background-color: var(--text-elements);
+  background-color: var(--accent-color);
   border-radius: 10px;
-}
+} */
 
 /* Estilos del sidebar */
 .sidebar {
