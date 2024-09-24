@@ -28,7 +28,6 @@
 
 .navbar-links a {
   font-size: 16px;
-  font-family: 'SF Pro';
   font-weight: 400;
   color: var(--text-elements);
   text-decoration: none;
@@ -37,13 +36,11 @@
 
 .navbar-links a:hover {
   color: #0A66C2;
-  font-family: 'SF Pro';
   font-weight: 400;
 }
 
 .brand {
   text-decoration: none;
-  font-family: 'SF Pro';
   font-size: 24px;
   font-weight: 500;
   color: rgb(10, 102, 194)
