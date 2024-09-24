@@ -17,7 +17,7 @@ body {
   width: 90%;
   max-width: 1300px;
   margin: auto;
-  font-family: 'SF Pro', sans-serif;
+  font-family: 'SF Pro';
   background-color: var(--main-background);
   color: var(--text-elements);
 }
