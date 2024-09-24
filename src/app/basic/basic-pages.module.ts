@@ -7,6 +7,8 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { PresentationComponent } from './shared/presentation/presentation.component';
+import { SampleImageComponent } from './shared/sample-image/sample-image.component';
 
 
 
@@ -16,6 +18,8 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
     ContactPageComponent,
     HomePageComponent,
     ServicesPageComponent,
+    PresentationComponent,
+    SampleImageComponent,
   ],
   imports: [
     CommonModule,

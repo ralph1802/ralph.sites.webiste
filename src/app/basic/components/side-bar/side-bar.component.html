@@ -1,13 +1,22 @@
 <div class="sidebar-button">
   <button (click)="toggleSidebar()">
-    <img src="/assets/images/hamburger.png" alt="">
+    <img src="/assets/images/hamburger.svg" alt="">
   </button>
 </div>
 
 <div [ngClass]="{'sidebar': true, 'open': isSidebarOpen}">
 
+  <div class="sidebar-button">
+    <button (click)="toggleSidebar()">
+      <img src="/assets/images/x.svg" alt="">
+    </button>
+  </div>
+
   <div class="navegation">
-    <h2>Navegation</h2>
+    <div class="title">
+      <h2>Navegation</h2>
+      <hr>
+    </div>
     <a [routerLink]="['/basic/home']" routerLinkActive="activate">Home</a>
     <a [routerLink]="['/basic/contact']" routerLinkActive="activate">Contact us</a>
     <a [routerLink]="['/basic/services']" routerLinkActive="activate">Services</a>
@@ -15,15 +24,13 @@
   </div>
 
   <div class="settings">
-    <h2>Settings</h2>
-    <div class="apparence">
-      <p>Apparence</p>
-      <theme-toggle></theme-toggle>
+    <div class="title">
+      <h2>Settings</h2>
+      <hr>
     </div>
-  </div>
-
-  <div class="dev">
-    <p>Dev by: <a>ralph.sites</a></p>
+    <div class="apparence">
+      <theme-combobox></theme-combobox>
+    </div>
   </div>
 </div>
 

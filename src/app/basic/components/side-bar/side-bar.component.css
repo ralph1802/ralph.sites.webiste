@@ -1,27 +1,39 @@
 /* Estilos del botón */
 .sidebar-button {
   text-align: center;
+  width: 38px;
+  height: 38px;
 }
 
 .sidebar-button button {
   cursor: pointer;
   background: var(--blocks-cards);
   border: none;
-  padding: 10px;
   border-radius: 10px;
-  height: 40px;
-  width: 50px;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.sidebar-button button img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  opacity: 1;
 }
 
-/* .sidebar-button button .bar {
-  display: block;
-  width: 80%;
-  height: 3px;
-  background-color: var(--accent-color);
-  border-radius: 10px;
-} */
+
+
+
+
 
 /* Estilos del sidebar */
+.sidebar.open {
+  right: 0;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -32,49 +44,54 @@
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
   transition: right 0.3s ease;
   z-index: 1;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 
-.sidebar.open {
-  right: 0;
-}
 
-.sidebar .head {
-  display: flex;
-  justify-content: space-between;
+.sidebar .sidebar-button {
+  margin-left: auto;
 }
 
 .sidebar .navegation {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 
 .sidebar a {
   display: inline-block;
-  margin: 5px;
-  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
   color: var(--text-elements);
+  border-radius: 10px;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .sidebar a.activate {
   background: var(--blocks-cards);
   border-radius: 10px;
+  font-weight: 500;
+  color: var(--accent-color);
 }
 
-.sidebar h2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--accent-color);
+.sidebar .title {
   margin-bottom: 10px;
 }
 
+.sidebar .title h2 {
+  font-family: 'SF Pro';
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-elements);
+  margin-bottom: 5px;
+}
 
 .sidebar .settings .apparence{
   font-size: 16px;
@@ -88,7 +105,7 @@
 .sidebar .dev{
   text-align: center;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-elements);
   margin-top: auto;
 }

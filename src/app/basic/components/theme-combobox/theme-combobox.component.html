@@ -1,0 +1,35 @@
+<div class="theme-toggle">
+  <div class="combobox">
+    <div class="appareance">
+      <a (click)="toggleOptions()" class="appearance-link">
+        Appearence
+        <img
+          src="/assets/images/{{ currentTheme === 'light' ? 'abajo-dark.svg' : 'abajo.svg' }}"
+          alt="Flecha abajo"
+          class="toggle-icon"
+          *ngIf="!showOptions"
+        >
+        <img
+          src="/assets/images/{{ currentTheme === 'light' ? 'arriba-dark.svg' : 'arriba.svg' }}"
+          alt="Flecha arriba"
+          class="toggle-icon"
+          *ngIf="showOptions"
+        >
+      </a>
+    </div>
+    <div *ngIf="showOptions" class="options">
+      <a
+        (click)="changeTheme('light')"
+        [ngClass]="{'active': currentTheme === 'light'}"
+      >
+        Light
+      </a>
+      <a
+        (click)="changeTheme('dark')"
+        [ngClass]="{'active': currentTheme === 'dark'}"
+      >
+        Dark
+      </a>
+    </div>
+  </div>
+</div>

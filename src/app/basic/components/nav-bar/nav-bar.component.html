@@ -1,6 +1,7 @@
 <div class="main-container">
   <div class="navbar-container">
     <nav class="navbar">
+      <a class="brand" href="#">ralph.sites</a>
       <ul class="navbar-links">
         <li *ngFor="let link of navLinks">
           <a [routerLink]="link.path">{{ link.label }}</a>
@@ -12,10 +13,6 @@
           <side-bar></side-bar>
         </div>
       </ul>
-      <a href="#"><img src="/assets/images/ralph.sites.png" alt="Logo" class="logo"></a>
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
     </nav>
   </div>
 

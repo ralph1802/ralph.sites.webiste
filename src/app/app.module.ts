@@ -7,6 +7,8 @@ import { NavBarComponent } from './basic/components/nav-bar/nav-bar.component';
 import { FooterComponent } from './basic/components/footer/footer.component';
 import { ThemeToggleComponent } from './basic/components/theme-toggle/theme-toggle.component';
 import { SideBarComponent } from './basic/components/side-bar/side-bar.component';
+import { ThemeComboboxComponent } from './basic/components/theme-combobox/theme-combobox.component';
+
 
 
 @NgModule({
@@ -15,6 +17,7 @@ import { SideBarComponent } from './basic/components/side-bar/side-bar.component
     NavBarComponent,
     FooterComponent,
     ThemeToggleComponent,
+    ThemeComboboxComponent,
     SideBarComponent,
   ],
   imports: [

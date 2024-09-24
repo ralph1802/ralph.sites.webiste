@@ -10,8 +10,12 @@ export class ThemeService {
     this.loadTheme();
   }
 
-  toggleTheme() {
-    this.theme = this.theme === 'light' ? 'dark' : 'light';
+  toggleTheme(theme?: 'light' | 'dark') {
+    if (theme) {
+      this.theme = theme;
+    } else {
+      this.theme = this.theme === 'light' ? 'dark' : 'light';
+    }
     this.applyTheme();
     localStorage.setItem('theme', this.theme);
   }
