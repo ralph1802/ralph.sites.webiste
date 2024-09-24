@@ -1,0 +1,18 @@
+.title-bar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  background: var(--blocks-cards);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+

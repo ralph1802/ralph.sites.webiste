@@ -9,6 +9,18 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { PresentationComponent } from './shared/presentation/presentation.component';
 import { SampleImageComponent } from './shared/sample-image/sample-image.component';
+import { TitleBarComponent } from './shared/title-bar/title-bar.component';
+import { WhyUsCardComponent } from './shared/why-us-card/why-us-card.component';
+import { WhyUsComponent } from './components/why-us/why-us.component';
+import { PopularDesignsComponent } from './components/popular-designs/popular-designs.component';
+import { ProcessComponent } from './components/process/process.component';
+import { TitleBarSimpleComponent } from './shared/title-bar-simple/title-bar-simple.component';
+import { TableRow1Component } from './shared/table-row1/table-row1.component';
+import { TableRow2Component } from './shared/table-row2/table-row2.component';
+import { ServicesComponent } from './components/services/services.component';
+import { PlansComponent } from './components/plans/plans.component';
+import { PlanCardComponent } from './shared/plan-card/plan-card.component';
+import { InvitationComponent } from './shared/invitation/invitation.component';
 
 
 
@@ -20,6 +32,18 @@ import { SampleImageComponent } from './shared/sample-image/sample-image.compone
     ServicesPageComponent,
     PresentationComponent,
     SampleImageComponent,
+    TitleBarComponent,
+    WhyUsCardComponent,
+    WhyUsComponent,
+    PopularDesignsComponent,
+    ProcessComponent,
+    TitleBarSimpleComponent,
+    TableRow1Component,
+    TableRow2Component,
+    ServicesComponent,
+    PlansComponent,
+    PlanCardComponent,
+    InvitationComponent,
   ],
   imports: [
     CommonModule,

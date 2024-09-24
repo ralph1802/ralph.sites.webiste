@@ -1,0 +1,12 @@
+.container{
+  margin-bottom: 10px;
+}
+
+.table {
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,33 @@
+.card {
+  width: 100%;
+  height: auto;
+  background: var(--blocks-cards);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 60px 20px 60px;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 10px;
+  order: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--accent-color);
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}

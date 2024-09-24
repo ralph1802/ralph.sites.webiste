@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider-wrapper {
+  width: 100%;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}

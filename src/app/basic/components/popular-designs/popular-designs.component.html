@@ -1,0 +1,14 @@
+<div class="container">
+  <title-bar title="Our most popular designs"></title-bar>
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide" *ngFor="let image of images">
+          <img [src]="image" alt="Image" class="image" />
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
