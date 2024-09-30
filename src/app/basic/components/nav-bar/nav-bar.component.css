@@ -1,4 +1,3 @@
-/* estilos generales */
 .navbar-container {
   width: 100%;
 }
@@ -35,9 +34,14 @@
 }
 
 .navbar-links a:hover {
-  color: #0A66C2;
+  color: var(--accent-color);
   font-weight: 400;
 }
+
+.navbar-links a.active {
+  color: var(--accent-color);
+}
+
 
 .brand {
   text-decoration: none;
@@ -50,8 +54,8 @@
   display: none;
 }
 
-/* estilos pantallas <=800px */
-@media (max-width: 800px) {
+
+@media (max-width: 700px) {
   .sidebar {
     display: block;
   }

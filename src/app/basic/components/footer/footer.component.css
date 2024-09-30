@@ -1,82 +1,42 @@
-/* -------------------- General Styles -------------------- */
-.footer {
+.container {
+  margin-bottom: 10px;
+}
+.contact {
   display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--blocks-cards);
-  padding: 20px;
-  border-radius: 10px 10px 0 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
 }
 
-.logo {
-  display: none;
-}
-
-.footer-section {
-  color: var(--text-elements);
-  padding: 20px;
+.social-media-contact {
   display: flex;
   flex-direction: column;
-  background-color: var(--main-background);
-  border-radius: 10px;
-
+  gap: 10px;
 }
 
-.footer-section h3 {
-  font-size: 18px;
+footer-navegation,
+.social-media-contact {
+  height: 100%;
 }
 
-.footer-section a {
-  color: var(--text-elements);
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 16px;
-  padding: 10px 0;
+.social-media {
+  height: 100%;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
-}
 
-.dev {
-  padding: 20px;
-  background-color: var(--blocks-cards);
-  border-top: 1px solid var(--main-background);
-  border-radius: 0 0 10px 10px;
-  text-align: center;
-}
+@media only screen and (max-width: 700px) {
 
-.dev p {
-  font-size: 14px;
-  color: var(--text-elements);
-  margin: 0;
-}
-
-.dev a {
-  color: var(--text-elements);
-  text-decoration: none;
-}
-
-.dev a:hover {
-  text-decoration: underline;
-}
-
-/* -------------------- Responsive Styles -------------------- */
-@media (max-width: 800px) {
-  .footer {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    text-align: center;
+  .contact {
+    grid-template-columns: 1fr;
   }
 
-  .logo {
+  .social-media-contact {
+    height: 100%;
+  }
+
+  contact-button {
     display: block;
-  }
-
-  .logo img {
-    width: 100px;
-  }
-
-  .footer-section a {
-    margin: 10px 0;
+    width: 100%;
   }
 }
+

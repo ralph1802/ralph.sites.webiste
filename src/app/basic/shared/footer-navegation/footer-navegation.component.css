@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.home,
+.services,
+.aboutUs,
+.contactUs {
+  padding: 30px;
+  background: var(--blocks-cards);
+  border-radius: 10px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title {
+  padding: 10px 0 10px 0;
+}
+
+.title a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-elements);
+}
+
+
+.home-navegation,
+.services-navegation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-navegation a,
+.services-navegation a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--text-elements);
+  font-weight: 400;
+  padding: 10px 0;
+  display: inline-block;
+  max-width: fit-content;
+}
+
+.container a:hover{
+  text-decoration: underline;
+}

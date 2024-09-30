@@ -31,3 +31,22 @@
   font-weight: 400;
   color: var(--text-color);
 }
+
+
+@media only screen and (max-width: 700px) {
+  .card {
+    text-align: center;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}

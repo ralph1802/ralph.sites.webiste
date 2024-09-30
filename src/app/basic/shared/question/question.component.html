@@ -1,0 +1,9 @@
+<div class="faq-item" (click)="toggleAnswer()">
+  <div class="question">
+    <h3>{{ question }}</h3>
+    <img [src]="isAnswerVisible ? 'assets/images/-.svg' : 'assets/images/+.svg'" alt="toggle-icon">
+  </div>
+  <div class="answer" [ngClass]="{ 'open': isAnswerVisible }">
+    <p>{{ answer }}</p>
+  </div>
+</div>

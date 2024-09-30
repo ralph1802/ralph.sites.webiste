@@ -33,4 +33,30 @@
   padding: 10px 30px;
   border-radius: 10px;
   max-width: fit-content;
+  user-select: none;
+}
+
+.container .start:hover {
+  background: #1a7cc0;
+
+}
+
+.container .start:active {
+  transform: scale(0.95);
+  background: var(--accent-color);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    text-align: center;
+    align-items: center;
+  }
+  .container .title {
+    font-size: 24px;
+  }
+
+  .container .description {
+    font-size: 12px;
+  }
 }

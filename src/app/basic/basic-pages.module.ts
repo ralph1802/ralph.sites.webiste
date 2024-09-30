@@ -21,6 +21,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { PlanCardComponent } from './shared/plan-card/plan-card.component';
 import { InvitationComponent } from './shared/invitation/invitation.component';
+import { QuestionsComponent } from './components/questions/questions.component';
+import { QuestionComponent } from './shared/question/question.component';
 
 
 
@@ -44,6 +46,8 @@ import { InvitationComponent } from './shared/invitation/invitation.component';
     PlansComponent,
     PlanCardComponent,
     InvitationComponent,
+    QuestionsComponent,
+    QuestionComponent,
   ],
   imports: [
     CommonModule,

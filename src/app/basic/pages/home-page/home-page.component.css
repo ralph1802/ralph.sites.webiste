@@ -5,3 +5,18 @@
   grid-template-columns: 2fr 1fr;
   gap: 10px;
 }
+
+@media only screen and (max-width: 700px) {
+  .presentation {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .sample-image {
+    display: none;
+  }
+
+  .invitation {
+    display: none;
+  }
+
+}

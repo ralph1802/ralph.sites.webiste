@@ -41,3 +41,13 @@
   width: 24px;
 }
 
+.button:hover {
+  background: #1a7cc0;
+
+}
+
+.button:active {
+  transform: scale(0.95);
+  background: var(--accent-color);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}

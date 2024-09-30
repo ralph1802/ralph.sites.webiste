@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-elements);
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+.social-media {
+  height: 100%;
+  width: 100%;
+  background: var(--blocks-cards);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+
+.social-media img {
+  width: 60px;
+}
+

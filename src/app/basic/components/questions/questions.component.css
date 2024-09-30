@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

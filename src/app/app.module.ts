@@ -8,6 +8,10 @@ import { FooterComponent } from './basic/components/footer/footer.component';
 import { ThemeToggleComponent } from './basic/components/theme-toggle/theme-toggle.component';
 import { SideBarComponent } from './basic/components/side-bar/side-bar.component';
 import { ThemeComboboxComponent } from './basic/components/theme-combobox/theme-combobox.component';
+import { FooterNavegationComponent } from './basic/shared/footer-navegation/footer-navegation.component';
+import { SocialMediaContactComponent } from './basic/shared/social-media-contact/social-media-contact.component';
+import { ContactButtonComponent } from './basic/shared/contact-button/contact-button.component';
+import { TitleBarIconComponent } from './basic/shared/title-bar-icon/title-bar-icon.component';
 
 
 
@@ -19,6 +23,10 @@ import { ThemeComboboxComponent } from './basic/components/theme-combobox/theme-
     ThemeToggleComponent,
     ThemeComboboxComponent,
     SideBarComponent,
+    FooterNavegationComponent,
+    SocialMediaContactComponent,
+    ContactButtonComponent,
+    TitleBarIconComponent,
   ],
   imports: [
     BrowserModule,

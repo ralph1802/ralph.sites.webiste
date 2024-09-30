@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-align: center;
+  align-items: center;
+  background: var(--accent-color);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #FFF;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+a img {
+  width: 18px;
+}
+
+.container a:hover {
+  background: #1a7cc0;
+
+}
+
+.container a:active {
+  transform: scale(0.95);
+  background: var(--accent-color);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+

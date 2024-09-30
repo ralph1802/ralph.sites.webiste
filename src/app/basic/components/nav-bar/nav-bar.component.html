@@ -4,7 +4,7 @@
       <a class="brand" href="#">ralph.sites</a>
       <ul class="navbar-links">
         <li *ngFor="let link of navLinks">
-          <a [routerLink]="link.path">{{ link.label }}</a>
+          <a [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
         </li>
         <li>
           <theme-toggle></theme-toggle>
